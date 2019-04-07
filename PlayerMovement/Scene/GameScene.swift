@@ -12,19 +12,20 @@ import GameplayKit
 class GameScene: SKScene {
     
     var gesturePad: GesturePad!
-    var player = Player()
+    var player: Player!
     
     override func didMove(to view: SKView) {
         super.didMove(to: view)
         // Gesture to move
         self.configureGesturePad(for: view)
+        
+        // Test map
+        let map = LevelBuilder(scene: self)
+        map.construct()
+        
+        self.player = Player(position: CGPoint(x: 0, y: 150), size: CGSize(width: map.blockSize-5, height: map.blockSize-5))
         self.addChild(self.player)
-        // Add bot
-        self.addChild(Player(position: CGPoint(x: -150, y: 0)))
-        self.addChild(setupHorizontalSafe(type: .up)!)
-        self.addChild(setupHorizontalSafe(type: .down)!)
-//        self.addChild(setupHorizontalSafe(type: .left)!)
-//        self.addChild(setupHorizontalSafe(type: .right)!)
+
     }
     
     override func update(_ currentTime: TimeInterval) {

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1277BC2257C54B00B97EB5 /* LevelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1277BB2257C54B00B97EB5 /* LevelList.swift */; };
+		1B1277BE2257C56900B97EB5 /* LevelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1277BD2257C56900B97EB5 /* LevelModel.swift */; };
+		1B1277C02257DEE200B97EB5 /* Level1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1277BF2257DEE200B97EB5 /* Level1.swift */; };
+		1B1277C22257E26700B97EB5 /* LevelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1277C12257E26700B97EB5 /* LevelBuilder.swift */; };
+		1B1277C42257E78C00B97EB5 /* Level2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1277C32257E78C00B97EB5 /* Level2.swift */; };
+		1B32BA29225773EC0088290C /* LevelBuilderExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32BA28225773EC0088290C /* LevelBuilderExample.swift */; };
 		1B48E73F2254F88C00DE36B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B48E73E2254F88C00DE36B3 /* AppDelegate.swift */; };
 		1B48E7452254F88C00DE36B3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B48E7442254F88C00DE36B3 /* GameScene.swift */; };
 		1B48E7472254F88C00DE36B3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B48E7462254F88C00DE36B3 /* GameViewController.swift */; };
@@ -20,7 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B48E73B2254F88C00DE36B3 /* PlayerMovement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayerMovement.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B1277BB2257C54B00B97EB5 /* LevelList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelList.swift; sourceTree = "<group>"; };
+		1B1277BD2257C56900B97EB5 /* LevelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelModel.swift; sourceTree = "<group>"; };
+		1B1277BF2257DEE200B97EB5 /* Level1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level1.swift; sourceTree = "<group>"; };
+		1B1277C12257E26700B97EB5 /* LevelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelBuilder.swift; sourceTree = "<group>"; };
+		1B1277C32257E78C00B97EB5 /* Level2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level2.swift; sourceTree = "<group>"; };
+		1B32BA28225773EC0088290C /* LevelBuilderExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelBuilderExample.swift; sourceTree = "<group>"; };
+		1B48E73B2254F88C00DE36B3 /* MapModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B48E73E2254F88C00DE36B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B48E7442254F88C00DE36B3 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		1B48E7462254F88C00DE36B3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +57,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B1277BA2257C53500B97EB5 /* LevelList */ = {
+			isa = PBXGroup;
+			children = (
+				1B1277BB2257C54B00B97EB5 /* LevelList.swift */,
+				1B1277BD2257C56900B97EB5 /* LevelModel.swift */,
+				1B1277BF2257DEE200B97EB5 /* Level1.swift */,
+				1B1277C32257E78C00B97EB5 /* Level2.swift */,
+			);
+			path = LevelList;
+			sourceTree = "<group>";
+		};
 		1B48E7322254F88C00DE36B3 = {
 			isa = PBXGroup;
 			children = (
@@ -56,7 +79,7 @@
 		1B48E73C2254F88C00DE36B3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1B48E73B2254F88C00DE36B3 /* PlayerMovement.app */,
+				1B48E73B2254F88C00DE36B3 /* MapModule.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,7 +136,9 @@
 		1B48E75A2254FAEF00DE36B3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1B1277BA2257C53500B97EB5 /* LevelList */,
 				1B48E75D2254FB7800DE36B3 /* Player.swift */,
+				1B1277C12257E26700B97EB5 /* LevelBuilder.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,6 +146,7 @@
 		1B48E75F2254FF6300DE36B3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1B32BA28225773EC0088290C /* LevelBuilderExample.swift */,
 				1B48E7602254FF7100DE36B3 /* GesturePad */,
 				1B48E766225529AB00DE36B3 /* UIColor + Random.swift */,
 			);
@@ -146,9 +172,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1B48E73A2254F88C00DE36B3 /* PlayerMovement */ = {
+		1B48E73A2254F88C00DE36B3 /* MapModule */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1B48E7532254F88E00DE36B3 /* Build configuration list for PBXNativeTarget "PlayerMovement" */;
+			buildConfigurationList = 1B48E7532254F88E00DE36B3 /* Build configuration list for PBXNativeTarget "MapModule" */;
 			buildPhases = (
 				1B48E7372254F88C00DE36B3 /* Sources */,
 				1B48E7382254F88C00DE36B3 /* Frameworks */,
@@ -158,9 +184,9 @@
 			);
 			dependencies = (
 			);
-			name = PlayerMovement;
+			name = MapModule;
 			productName = PlayerMovement;
-			productReference = 1B48E73B2254F88C00DE36B3 /* PlayerMovement.app */;
+			productReference = 1B48E73B2254F88C00DE36B3 /* MapModule.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -178,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1B48E7362254F88C00DE36B3 /* Build configuration list for PBXProject "PlayerMovement" */;
+			buildConfigurationList = 1B48E7362254F88C00DE36B3 /* Build configuration list for PBXProject "MapModule" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -191,7 +217,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1B48E73A2254F88C00DE36B3 /* PlayerMovement */,
+				1B48E73A2254F88C00DE36B3 /* MapModule */,
 			);
 		};
 /* End PBXProject section */
@@ -214,12 +240,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1277BE2257C56900B97EB5 /* LevelModel.swift in Sources */,
 				1B48E75E2254FB7800DE36B3 /* Player.swift in Sources */,
+				1B1277C02257DEE200B97EB5 /* Level1.swift in Sources */,
+				1B1277C22257E26700B97EB5 /* LevelBuilder.swift in Sources */,
+				1B1277C42257E78C00B97EB5 /* Level2.swift in Sources */,
 				1B48E7652255073800DE36B3 /* GameSceneView.swift in Sources */,
+				1B32BA29225773EC0088290C /* LevelBuilderExample.swift in Sources */,
 				1B48E7452254F88C00DE36B3 /* GameScene.swift in Sources */,
 				1B48E7622254FFA600DE36B3 /* GesturePad.swift in Sources */,
 				1B48E767225529AB00DE36B3 /* UIColor + Random.swift in Sources */,
 				1B48E7472254F88C00DE36B3 /* GameViewController.swift in Sources */,
+				1B1277BC2257C54B00B97EB5 /* LevelList.swift in Sources */,
 				1B48E73F2254F88C00DE36B3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,7 +405,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = academy.PlayerMovement;
+				PRODUCT_BUNDLE_IDENTIFIER = academy.modules.map;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -391,7 +423,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = academy.PlayerMovement;
+				PRODUCT_BUNDLE_IDENTIFIER = academy.modules.map;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -401,7 +433,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1B48E7362254F88C00DE36B3 /* Build configuration list for PBXProject "PlayerMovement" */ = {
+		1B48E7362254F88C00DE36B3 /* Build configuration list for PBXProject "MapModule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B48E7512254F88E00DE36B3 /* Debug */,
@@ -410,7 +442,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1B48E7532254F88E00DE36B3 /* Build configuration list for PBXNativeTarget "PlayerMovement" */ = {
+		1B48E7532254F88E00DE36B3 /* Build configuration list for PBXNativeTarget "MapModule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1B48E7542254F88E00DE36B3 /* Debug */,

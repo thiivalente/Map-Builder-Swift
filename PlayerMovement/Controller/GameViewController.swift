@@ -28,8 +28,9 @@ class GameViewController: UIViewController {
         
         self.scene = GameScene(size: skView.frame.size)
         self.scene.scaleMode = .resizeFill
-        self.scene.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        self.scene.anchorPoint = CGPoint(x: 0, y: 0)
         
+        self.skView.showsPhysics = true
         
         self.skView.presentScene(self.scene)
     }

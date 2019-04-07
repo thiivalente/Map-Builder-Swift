@@ -10,28 +10,31 @@ import SpriteKit
 
 class Player: SKShapeNode {
     
-    let hasRect = CGRect(x: 0, y: 0, width: 50, height: 50)
+    var hasRect = CGRect(x: 0, y: 0, width: 50, height: 50)
     
     // Object Property
-    var velocity : CGFloat = 30
-    var jumpForce: CGFloat = 50
+    var velocity : CGFloat = 15
+    var jumpForce: CGFloat = 15
     
     /// Init player
     ///
     /// - Parameter position: Optional position to set object in scene
-    init(position: CGPoint? = CGPoint(x: 0, y: 0)){
+    init(position: CGPoint? = CGPoint(x: 0, y: 0), size: CGSize){
         super.init()
         // Necessary to create a ShapeNode - Retangle
-        self.path = UIBezierPath(roundedRect: hasRect, cornerRadius: 0).cgPath
+        let rect = CGRect(x: position!.x, y: position!.y, width: size.width, height: size.height)
+        self.hasRect = rect
+        self.path = UIBezierPath(roundedRect: rect, cornerRadius: 0).cgPath
         self.position = position!
         self.fillColor = UIColor.random()
         self.configurePhysicsBody()
+        self.velocity = size.width/2
+        self.jumpForce = size.width/2
     }
     
     /// Configure physics from player
     func configurePhysicsBody() {
-        // Center is necessary because the scene is (0.5;0.5) = (x;y), so is necessary get center of object
-        self.physicsBody = SKPhysicsBody(rectangleOf: self.hasRect.size, center: CGPoint(x: self.hasRect.width/2, y: self.hasRect.height/2))
+        self.physicsBody = SKPhysicsBody(rectangleOf: self.hasRect.size, center: CGPoint(x: self.hasRect.midX, y: self.hasRect.midY))
         self.physicsBody!.affectedByGravity = true
         self.physicsBody!.friction = 0
         self.physicsBody!.restitution = 0
