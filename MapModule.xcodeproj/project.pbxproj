@@ -71,7 +71,7 @@
 		1B48E7322254F88C00DE36B3 = {
 			isa = PBXGroup;
 			children = (
-				1B48E73D2254F88C00DE36B3 /* PlayerMovement */,
+				1B48E73D2254F88C00DE36B3 /* MapBuilder */,
 				1B48E73C2254F88C00DE36B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1B48E73D2254F88C00DE36B3 /* PlayerMovement */ = {
+		1B48E73D2254F88C00DE36B3 /* MapBuilder */ = {
 			isa = PBXGroup;
 			children = (
 				1B48E7632255071A00DE36B3 /* View */,
@@ -97,7 +97,7 @@
 				1B48E74B2254F88E00DE36B3 /* Assets.xcassets */,
 				1B48E7502254F88E00DE36B3 /* Info.plist */,
 			);
-			path = PlayerMovement;
+			path = MapBuilder;
 			sourceTree = "<group>";
 		};
 		1B48E7562254FA8E00DE36B3 /* Application */ = {
@@ -201,6 +201,7 @@
 				TargetAttributes = {
 					1B48E73A2254F88C00DE36B3 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -400,14 +401,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8UG5N7U4RW;
-				INFOPLIST_FILE = PlayerMovement/Info.plist;
+				INFOPLIST_FILE = MapBuilder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = academy.modules.map;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -418,14 +419,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8UG5N7U4RW;
-				INFOPLIST_FILE = PlayerMovement/Info.plist;
+				INFOPLIST_FILE = MapBuilder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = academy.modules.map;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
